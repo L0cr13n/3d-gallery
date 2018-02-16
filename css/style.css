@@ -1,36 +1,44 @@
 body {
-  display: block;
-  position: relative;
-  background: #000;
-  padding: 70px 0;
-  font: 15px/20px Arial, sans-serif;
-  z-index: 1;
+    display: block;
+    position: absolute;
+    background: #000;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font: 15px/20px Arial, sans-serif;
+    z-index: 1;
+    overflow: hidden;
 }
 
 #header {
-	background-image: url("../img/header.jpg");
-	background-size: 85%;
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 130px;
-	position: absolute;
-	top: 0;
+    position: relative;
+    width: 100%;
+    height: 15%;
+	margin-bottom: 1vw;
+	background-image: url(../img/header.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /**************************
    Main 3d Gallery
 **************************/
+.containerWrap {
+	position: relative;
+	height: ;
+	width: 100%
+}
 
 .container {
-  display: block;
-  margin: 0 auto;
-  width: 90em; /*210px*/
-  height: 1em;
-  position: relative;
-  perspective: 1100px;
-  z-index: 1;
-  top: 4em;
-  right: 1em;
+	display: block;
+    margin: 0 auto;
+	z-index: 1;
+    top: 0;
+    max-height: 100%;
+    width: 100%;
+    height: 0%;
+    position: relative;
+    perspective: 60vw;
 }
 
 .carousel {
@@ -38,7 +46,7 @@ body {
   z-index: -1;
   height: 100%;
   width: 100%;
-  position: absolute;
+  position: relative;
   transform-style: preserve-3d;
   transition: transform 1s;
 }
@@ -47,72 +55,85 @@ body {
   z-index: 5;
   display: block;
   position: absolute;
+  top: 0px;
   background: #000;
-  width: 100%;
-  height: 50em;
+  width: 95%;
+  height: 40em;
   text-align: center;
   color: #000;
   border-radius: 2px;
+  /*max-height: 715px;*/
 
 }
 .item:hover{
-	
+
 }
 .a {
-  transform: rotateY(0deg) translateZ(1200px);
+  transform: rotateY(0deg) translateZ(85vw);
   border: 4px solid #ed1c24;
   background-color:rgba(0, 0, 0, 0.5);
   background-image: url("../img/zach.jpg");
   background-position: center;
   background-repeat: no-repeat;
   transition: all 1s ease;
-  background-size: 75%;
+  background-size: 68%;
 }
 .b {
-  transform: rotateY(60deg) translateZ(1200px);
+  transform: rotateY(60deg) translateZ(85vw);
   border: 4px solid #0072bc;
   background-color:rgba(0, 0, 0, 0.5);
   background-image: url("../img/SeanZach.jpg");
   background-position: center;
   background-repeat: no-repeat;
   transition: all 1s ease;
-  background-size: 84%;
+  background-size: 75%;
 }
 .c {
-  transform: rotateY(120deg) translateZ(1200px);
+  transform: rotateY(120deg) translateZ(85vw);
   border: 4px solid #39b54a;
   background-color:rgba(0, 0, 0, 0.5);
+  background-image: url("../img/SeanZachEm.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 1s ease;
+  background-size: 75%;
+
 }
 .d {
-  transform: rotateY(180deg) translateZ(1200px);
+  transform: rotateY(180deg) translateZ(85vw);
   border: 4px solid #f26522;
   background-color:rgba(0, 0, 0, 0.5);
 }
 .e {
-  transform: rotateY(240deg) translateZ(1200px);
+  transform: rotateY(240deg) translateZ(85vw);
   border: 4px solid #630460;
   background-color:rgba(0, 0, 0, 0.5);
-} 
+}
 .f {
-  transform: rotateY(300deg) translateZ(1200px);
+  transform: rotateY(300deg) translateZ(85vw);
   border: 4px solid #8c6239;
   background-color:rgba(0, 0, 0, 0.5);
 }
 /**************************
       Color Ball
 **************************/
+
+.controlsWrap {
+
+}
+
 .colorBallContainer {
-	top: 30em;
 	position: relative;
-	width: 250px;
-	height: 250px;
+	top: 300px;
+	width: 175px;
+	height: 175px;
 	margin: 0 auto;
     background-image: url("../img/sphereBg.svg");
 	background-repeat: no-repeat;
-    background-position: 13% 48%;
+    background-position: 7px 43%;
 	transition: all 1s ease;
 	transform: rotate(1deg);
-	 background-size: auto;
+	 background-size: contain;
 }
 .colorBall {
 	border-radius: 50%;
@@ -121,25 +142,15 @@ body {
 	margin: 0 auto;
 	position: relative;
 	top: 34%;
-	height: 80px;
-	width: 80px;
+	height: 50px;
+	width: 50px;
 	transition: all 1s ease;
 	transform: rotate(1deg);
 }
 #redBall {
 	background: radial-gradient(circle at 20px 20px, red, #000);
 }
-#greenBall {
-	bottom: 10px;
-	background: radial-gradient(circle at 5px 5px, green, #000);
-}
-#blueBall {
-	bottom: 10px;
-	background: radial-gradient(circle at 5px 5px, blue, #000);
-}
-#uvBall {
-	background: radial-gradient(circle at 5px 5px, purple, #000);
-}
+
 /**************************
 Previous and Next buttons
 **************************/
@@ -152,8 +163,8 @@ Previous and Next buttons
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
-	width: 100px;
-	height: 50px;
+  width: 100px;
+  height: 50px;
   color: red;
   position: absolute;
   top: 100px;
@@ -163,9 +174,9 @@ Previous and Next buttons
   border-radius: 5px;
   transition: box-shadow 0.1s, top 0.1s;
 }
-.next:hover, .prev:hover { 
-	transition: all .2s ease; 
-	transform: scale(1.1); 
+.next:hover, .prev:hover {
+	transition: all .2s ease;
+	transform: scale(1.1);
 
 }
 .next:active, .prev:active {
@@ -174,9 +185,44 @@ Previous and Next buttons
 
 .next {
 	right: 5em;
-	top: 50em;
+	top: 32em;
 	}
 .prev {
 	left: 5em;
-	top: 50em;
+	top: 32em;
 	}
+
+/************************************************
+Media Queries based on height due to scaling
+issues with windows icon and app % increase.
+See readMe for clarification.
+***********************************************/
+@media only screen
+and (min-height : 560px) {
+
+}
+
+@media only screen
+and (min-height : 730px) {}
+
+
+@media only screen
+and (min-height : 960px) {
+	.prev, .next {
+		top: 50em;
+	}
+	.item {
+		height: 62em;
+	}
+	.colorBallContainer {
+		top: 475px;
+		width: 250px;
+		height: 250px;
+		background-position: 10px 48%;
+	}
+	.colorBall {
+		top: 34%;
+		height: 80px;
+		width: 80px;
+	}
+}
