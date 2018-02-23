@@ -14,10 +14,28 @@ body {
     position: relative;
     width: 100%;
     height: 15%;
-	margin-bottom: 1vw;
+	margin-bottom: 2vw;
 	background-image: url(../img/header.jpg);
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+#hoverGuardLeft {
+	height: 505px;
+	width: 375px;
+	float: left;
+	position: relative;
+	top: -185px;
+	z-index: 1;
+}
+
+#hoverGuardRight {
+	height: 505px;
+	width: 375px;
+	float: right;
+	position: relative;
+	top: -185px;
+	z-index: 1;
 }
 
 /**************************
@@ -59,59 +77,87 @@ body {
   background: #aaa;
   width: 95%;
   height: 50em;
+  padding-top: 1px;
   text-align: center;
   color: #fff;
   border-radius: 2px;
   /*max-height: 715px;*/
+  transition: all .3s ease;
 }
-.item:hover{
 
-}
 .a {
   transform: rotateY(0deg) translateZ(85vw);
   //border: 4px solid #ed1c24;
-  background-color:rgba(0, 0, 0, 0.5);
+  background-color:rgba(0, 0, 0, 0.1);
   background-image: url("../img/zach.jpg");
   background-position: center;
   background-repeat: no-repeat;
-
   background-size: contain;
 }
+.a:hover{
+	transform: scale(1.0) rotateY(0deg) translateZ(200px) translateY(-100px) ;
+}
+
 .b {
   transform: rotateY(60deg) translateZ(85vw);
   //border: 4px solid #0072bc;
-  background-color:rgba(0, 0, 0, 0.5);
+  background-color:rgba(0, 0, 0, 0.1);
   background-image: url("../img/SeanZach.jpg");
   background-position: center;
   background-repeat: no-repeat;
-
   background-size: contain;
+}
+.b:hover{
+	transform: scale(1.0) rotateY(60deg) translateZ(200px) translateY(-100px) ;
 }
 .c {
   transform: rotateY(120deg) translateZ(85vw);
   //border: 4px solid #39b54a;
-  background-color:rgba(0, 0, 0, 0.5);
+  background-color:rgba(0, 0, 0, 0.1);
   background-image: url("../img/SeanZachEm.jpg");
   background-position: center;
   background-repeat: no-repeat;
-
   background-size: contain;
-
+}
+.c:hover{
+	transform: scale(1.0) rotateY(120deg) translateZ(200px) translateY(-100px) ;
 }
 .d {
   transform: rotateY(180deg) translateZ(85vw);
   //border: 4px solid #f26522;
-  background-color:rgba(0, 0, 0, 0.5);
+    background-color:rgba(0, 0, 0, 0.1);
+  background-image: url("../img/zach.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.d:hover{
+	transform: scale(1.0) rotateY(180deg) translateZ(200px) translateY(-100px) ;
 }
 .e {
   transform: rotateY(240deg) translateZ(85vw);
   //border: 4px solid #630460;
-  background-color:rgba(0, 0, 0, 0.5);
+  background-color:rgba(0, 0, 0, 0.1);
+   background-image: url("../img/SeanZach.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.e:hover{
+	transform: scale(1.0) rotateY(240deg) translateZ(200px) translateY(-100px) ;
 }
 .f {
   transform: rotateY(300deg) translateZ(85vw);
   //border: 4px solid #8c6239;
-  background-color:rgba(0, 0, 0, 0.5);
+  background-color:rgba(0, 0, 0, 0.1);
+    
+	    background-image: url("../img/SeanZachEm.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.f:hover{
+	transform: scale(1.0) rotateY(300deg) translateZ(200px) translateY(-100px) ;
 }
 /**************************
       Color Ball
