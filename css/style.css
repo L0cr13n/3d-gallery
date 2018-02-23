@@ -22,7 +22,7 @@ body {
 
 #hoverGuardLeft {
 	height: 605px;
-	width: 450px;
+	width: 500px;
 	float: left;
 	position: relative;
 	top: -185px;
@@ -31,7 +31,7 @@ body {
 
 #hoverGuardRight {
 	height: 605px;
-	width: 450px;
+	width: 500px;
 	float: right;
 	position: relative;
 	top: -185px;
@@ -96,7 +96,7 @@ body {
   background-size: contain;
 }
 .a:hover{
-	transform: scale(1.0) rotateY(0deg) translateZ(200px) translateY(-100px) ;
+	transform: scale(1.0) rotateY(0deg) translateZ(100px) translateY(-150px);
 }
 
 .b {
@@ -109,7 +109,7 @@ body {
   background-size: contain;
 }
 .b:hover{
-	transform: scale(1.0) rotateY(60deg) translateZ(200px) translateY(-100px) ;
+	transform: scale(1.0) rotateY(60deg) translateZ(100px) translateY(-150px);
 }
 .c {
   transform: rotateY(120deg) translateZ(85vw);
@@ -121,7 +121,7 @@ body {
   background-size: contain;
 }
 .c:hover{
-	transform: scale(1.0) rotateY(120deg) translateZ(200px) translateY(-100px) ;
+	transform: scale(1.0) rotateY(120deg) translateZ(100px) translateY(-150px) ;
 }
 .d {
   transform: rotateY(180deg) translateZ(85vw);
@@ -133,7 +133,7 @@ body {
   background-size: contain;
 }
 .d:hover{
-	transform: scale(1.0) rotateY(180deg) translateZ(200px) translateY(-100px) ;
+	transform: scale(1.0) rotateY(180deg) translateZ(100px) translateY(-150px) ;
 }
 .e {
   transform: rotateY(240deg) translateZ(85vw);
@@ -145,7 +145,7 @@ body {
   background-size: contain;
 }
 .e:hover{
-	transform: scale(1.0) rotateY(240deg) translateZ(200px) translateY(-100px) ;
+	transform: scale(1.0) rotateY(240deg) translateZ(100px) translateY(-150px) ;
 }
 .f {
   transform: rotateY(300deg) translateZ(85vw);
@@ -158,7 +158,7 @@ body {
   background-size: contain;
 }
 .f:hover{
-	transform: scale(1.0) rotateY(300deg) translateZ(200px) translateY(-100px) ;
+	transform: scale(1.0) rotateY(300deg) translateZ(100px) translateY(-150px) ;
 }
 /**************************
       Color Ball
